@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: config
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+      host: localhost
+      port: 8500
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+  profiles:
+    active: native
+
+server:
+  port: 8888

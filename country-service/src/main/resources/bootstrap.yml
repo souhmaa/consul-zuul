@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: country-service
+  cloud:
+    consul:
+      discovery:
+        prefer-ip-address: true
+      host: consul_host
+      port: 8500
+    config:
+      server:
+        bootstrap: true
+      uri: http://config_host:${config.port:8888}
+      fail-fast: true
+
+security:
+  basic:
+    enable: false

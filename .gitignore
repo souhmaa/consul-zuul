@@ -1,0 +1,11 @@
+auth-service/.idea/
+auth-service/auth-service.iml
+auth-service/target/
+city-service/.idea/
+city-service/target/
+config/.idea/
+config/target/
+country-service/.idea/
+country-service/target/
+gateway/.idea/
+gateway/target/
